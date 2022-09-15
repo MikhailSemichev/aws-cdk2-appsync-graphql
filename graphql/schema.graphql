@@ -1,0 +1,19 @@
+type Query {
+  getHeader: Header!
+  getFooter: Footer!
+}
+
+type Header {
+  logoUrl: String!
+  menu: [String]
+}
+
+type Footer {
+  copyrightText: String
+  links: [FooterLink]
+}
+
+type FooterLink {
+  text: String!
+  url: String!
+}
