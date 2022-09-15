@@ -1,6 +1,7 @@
 type Query {
-  getHeader: Header!
+  getHeader(authorized: Boolean!): Header!
   getFooter: Footer!
+  getHomePage: HomePage!
 }
 
 type Header {
@@ -16,4 +17,9 @@ type Footer {
 type FooterLink {
   text: String!
   url: String!
+}
+
+type HomePage {
+  title: String!
+  image: String!
 }

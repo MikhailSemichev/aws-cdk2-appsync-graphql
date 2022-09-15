@@ -46,6 +46,8 @@ export class MiddlewareStack extends cdk.Stack {
 
     this.addResolver('Query', 'getFooter', '../src/lambdas/footer/getFooter.lambda.ts');
 
+    this.addResolver('Query', 'getHomePage', '../src/lambdas/homePage/getHomePage.lambda.ts');
+
     new cdk.CfnOutput(this, 'GraphQLAPIURL', {
       value: this.api.attrGraphQlUrl,
     });
