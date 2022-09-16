@@ -38,6 +38,7 @@
     "aws-cdk-lib": "2.41.0",
     "cdk-dynamo-table-viewer": "^0.2.252",
     "constructs": "^10.0.0",
+    "contentstack": "^3.15.3",
     "eslint": "^8.23.0",
     "pg": "^8.8.0",
     "prettier": "^2.7.1",
